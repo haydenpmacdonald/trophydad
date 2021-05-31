@@ -1,0 +1,22 @@
+.album--container {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    color: rgb(170, 170, 170);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.album--image {
+    height: 400px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 20px 20px #774af579;
+}
+
+@media screen and (max-width: 900px) {
+    .album--image {
+        width: 70%;
+        height: auto;
+    }
+}

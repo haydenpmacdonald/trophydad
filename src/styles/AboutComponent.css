@@ -1,0 +1,49 @@
+.about--component--container {
+    text-align: center;
+}
+
+.about--component--section {
+    background-image:
+    linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 249, 244, 0.644) 30%, rgba(0, 0, 0, 0) 50%),
+    url('https://images.unsplash.com/photo-1496185524395-81f295f4859e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      color: rgb(255, 255, 255);
+      min-height: 300px;
+      height: 100vh;
+      max-height: 800px;
+      max-width: 2000px;
+      width: 100%;
+      background-size: cover;
+      text-align: center;
+}
+
+.album--container--text {
+  padding: 100px;
+  color: #051d35;
+  font-size: 30px;
+}
+
+@supports (backdrop-filter: none) {
+    .about--component--overlay {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      height: 100%;
+      padding: 20px;
+      background-color: rgba(105, 105, 105, 0.24);  
+    }
+  }
+
+.about--component--paragraph {
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  .album--container--text {
+    padding: 20px;
+  }
+    .about--component--container {
+
+    }
+    .about--component--paragraph {
+        font-size: 20px;
+    }
+}

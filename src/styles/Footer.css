@@ -1,0 +1,22 @@
+.footer--container {
+    color: black;
+    text-align: center;
+}
+
+.footer--header {
+    text-transform: uppercase;
+	background: linear-gradient(to right, rgb(27, 28, 114) 0%, rgb(119, 98, 209) 25%, pink, #ffffff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.footer-item {
+    display: inline-block;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}

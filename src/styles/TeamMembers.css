@@ -1,0 +1,119 @@
+/* image grid styles */
+.img-grid{
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: rgb(27, 31, 33);
+    color: white;
+  }
+  
+  .img-wrap{
+    overflow: hidden;
+    height: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    padding: 35% 0;
+    /* padding controls height, will always be perfectly square regardless of width */
+    position: relative;
+    opacity: 1;
+  }
+  
+  .img-wrap img{
+    min-width: 100%;
+    min-height: 350px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .team--image--overlay {
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 1s ease;
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .img-wrap:hover .team--image--overlay {
+    opacity: 0.7;
+  }
+  
+  .img-grid-desc {
+    color: grey;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+  }
+
+  .img-wrap:hover .overlay--text {
+    opacity: 1;
+  }
+
+  .overlay--text {
+      display: block;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      top: 0;
+      position: absolute;
+  }
+
+  .overlay--name {
+      font-size: 40px;
+      margin: 0px;
+      padding: 0px;
+      color: pink;
+  }
+  /* modal styles */
+  .backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 50px;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+  }
+  
+  .backdrop img{
+    display: block;
+    max-width: 60%;
+    max-height: 80%;
+    margin: 60px auto;
+    box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+    border: 3px solid white;
+  }
+  
+  @media only screen and (max-width: 900px) {
+      .img-grid{
+          padding: 0px;
+          width: 100%;
+          display: block;
+      }
+      .img-wrap {
+         
+      }
+  
+      .backdrop img{
+          margin-top: 40px;
+          max-width: 100%;
+          max-height: 100%;
+          width: 100%;
+          height: auto;
+          border: 1px solid white;
+        }
+  }
