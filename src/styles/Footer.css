@@ -20,3 +20,12 @@
     color: black;
     margin-right: 15px;
 }
+
+.company--logo {
+    height: 20px;
+    width: auto;
+}
+
+.site--by--p {
+    font-size: 10px;
+}

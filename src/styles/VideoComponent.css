@@ -29,3 +29,9 @@ a {
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 900px) {
+    .gradient--text--video {
+        font-size: 60px;
+    }
+}

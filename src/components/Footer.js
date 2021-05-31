@@ -39,7 +39,7 @@ const Footer = () => {
             <h2 className='social--logos'><a href='https://twitter.com/trophydadmusic?lang=en'><i className="fab fa-twitter"></i></a></h2>
             <h2 className='social--logos'><a href='https://www.youtube.com/channel/UCv8k2iuekqucH-KTZ_6SpHg'><i className="fab fa-youtube"></i></a></h2>
            
-            
+            <p className='site--by--p'><a href='http://www.websuitestudio.com'><img src='images/Original-transparent.png' className='company--logo' alt='Web Suite Studio company logo'></img></a></p>
         </div>
     )
 }
