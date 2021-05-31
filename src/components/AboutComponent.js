@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/AboutComponent.css';
-import { Link } from 'react-router-dom';
 
 const AboutComponent = () => {
     return (
